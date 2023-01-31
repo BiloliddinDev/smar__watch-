@@ -1,0 +1,54 @@
+.footer {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+
+  width: 100%;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+    padding: 50px;
+  }
+
+  &__text {
+    max-width: 400px;
+    font-style: italic;
+    color: white;
+  }
+
+  &__logo {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  &__links {
+    display: flex;
+    gap: 25px;
+  }
+
+  &__title {
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .footer {
+    &__box {
+      flex-direction: column;
+      gap: 100px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.abaut {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5kGc6eOh_DgFZebOZGO7ADZWBOajqJRzDcg&usqp=CAU");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__heading {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+  }
+
+  &__text {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    margin-bottom: 50px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .abaut {
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .abaut {
+    padding-bottom: 100px;
+    &__wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

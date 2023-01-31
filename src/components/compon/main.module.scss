@@ -1,0 +1,49 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: palevioletred;
+
+  &__heading {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+    padding: 0;
+    color: white;
+  }
+
+  &__price {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: white;
+  }
+
+  &__img {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .wrapper {
+    &__img {
+      width: 400px;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .wrapper {
+    &__img {
+      width: 200px;
+    }
+
+    &__heading {
+      font-size: 30px;
+    }
+
+    &__price {
+      font-size: 20px;
+    }
+  }
+}

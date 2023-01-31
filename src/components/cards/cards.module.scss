@@ -1,0 +1,23 @@
+.cards {
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  background-color: palevioletred;
+  border-radius: 12px;
+  text-align: center;
+
+  &__title {
+    font-size: 20px;
+    color: white;
+    border-bottom: 1px solid white;
+  }
+
+  &__text {
+    font-size: 16px;
+    color: pink;
+  }
+
+  img {
+    width: 280px;
+  }
+}
